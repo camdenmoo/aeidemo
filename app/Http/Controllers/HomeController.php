@@ -9,8 +9,8 @@ class HomeController extends Controller
     public function index(){
         return view('index');
     }
-    
+
     public function somethingElse(){
-        return view('something-else');
+        return view('something-else');  
     }
 }
