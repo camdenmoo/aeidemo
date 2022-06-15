@@ -1,44 +1,43 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## AEI Demo
 
-## About Laravel
+This is well outside the remit of your project outline, but after reading through the brief I chose to build the kind of tool I would like to see applied to the the situation described for 'Paradise Music'.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The functionality to search available releases by text entry (iTunes 1st Jun 2021) is included at [https://aeidemo.frankjones.co/command-line](https://aeidemo.frankjones.co/command-line).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+It works with any given date format (01-06-2021, 01/06/2021, June 06, 2021) etc.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The distribution partner is not case-sensitive. So it is quite robust. I will be adding further safeguards later today.
 
-## Learning Laravel
+## Extra Stuff
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+There is also a form style method of searching for the same release information at [https://aeidemo.frankjones.co](https://aeidemo.frankjones.co).
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+As you will see, the sidebar menu offers a range of views to visualise the information from the CSV. Forming the Begining of a CRUD application to be applied to the business example of 'Paradise Music'.
 
-## Laravel Sponsors
+Under 'Partners' there is the ability to add a new ditribution partner. If you add 'Spotify' as a new distribution partner, checking 'All of the above' for the 'Ditribution types' field, this updates the relevant fields under the 'Artists' and 'Releases' views for example.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Also, the 'Partners' and 'Distribution Types' views give us a useful count to so how many songs have been released by a certain partner or using a certain distribution type.
 
-### Premium Partners
+## More to Come
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
+I'll will be adding more CRUD functionality to other elements of the application. I will also be adding the ability to import/export CSV files.
+
+## Set Up & Installation
+
+It's a straight Laravel 9 application and all the necessary database migrations and seeders are in place. So it should be faily self-explanatory should you wish to install it. Though I'm not sure why you would need to.
+
+## In Conclusion 
+
+I've put this together rather hastily and it obviously not something that I would consider ready for release. It's more of an expression of the kind of tools I like to build for the 'Paradise Music' scenario. 
+
+I completely understand if this kind of work is not what you're looking for and I'd take no offence if you choose not discuss the job opening any further with me.
+
+Nevertheless, I will continue working on the project and adding features before a final clean-up overhaul to the point where it would be ready for release. 
+
+Everything will continue to be posted to this public repository on GitHub so if you wanted to check in at a later stage, that's fine with me.
+
+
 - **[Many](https://www.many.co.uk)**
 - **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
 - **[DevSquad](https://devsquad.com)**
