@@ -23,6 +23,8 @@
             </select>
 
             <input type="date" name="date">
+
+            <button type="submit">View available releases</button>
                         
         </form>
     </section>

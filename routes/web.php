@@ -32,10 +32,11 @@ use App\Http\Controllers\DistributionTypeController;
 
 // Home Routes
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/form/results', [HomeController::class, 'formResults']);
+Route::post('/form/results', [HomeController::class, 'formResults']);
 
 
 Route::get('/command-line', [HomeController::class, 'commandLine']);
+Route::post('/command-line/results', [HomeController::class, 'commandLineResults']);
 
 
 

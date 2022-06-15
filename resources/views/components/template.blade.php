@@ -31,7 +31,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="/">Database</a>
+                        <a href="/">Search</a>
                     </li>
                     <li>
                         <a href="/command-line">Command line</a>
