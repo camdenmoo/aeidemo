@@ -37,3 +37,7 @@ Nonetheless, I will continue working on the project and adding features before a
 
 Everything will continue to be posted to this public repository on GitHub so if you wanted to check in at a later stage, that's fine with me.
 
+Love & Peas
+
+Frank
+
