@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
-            $table->string('hex', 11);
+            $table->string('hex', 11)->unique();
             $table->foreignId('artist_id');
             $table->string('name');
             $table->string('slug');

@@ -15,10 +15,11 @@ return new class extends Migration
     {
         Schema::create('partners', function (Blueprint $table) {
             $table->id();
-            $table->string('hex', 11);
-            $table->string('name');
-            $table->string('slug');
-            $table->string('distribution_types');
+            $table->string('hex', 11)->unique();
+            $table->string('name')->unique();
+            $table->string('slug')->unique();
+            $table->string('distribution_types')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

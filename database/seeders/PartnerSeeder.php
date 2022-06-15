@@ -19,11 +19,11 @@ class PartnerSeeder extends Seeder
         Partner::insert([
             [
                 // iTunes
-                'hex' => Str::random(11), 'name' => 'iTunes', 'slug' => 'itunes', 'distribution_types' => '1', 'created_at' => now(), 'updated_at' => now()
+                'hex' => Str::random(11), 'name' => 'iTunes', 'slug' => 'itunes', 'distribution_types' => '1', 'image' => 'itunes.png', 'created_at' => now(), 'updated_at' => now()
             ],
             [
                 // YouTube
-                'hex' => Str::random(11), 'name' => 'YouTube', 'slug' => 'youtube', 'distribution_types' => '2', 'created_at' => now(), 'updated_at' => now()
+                'hex' => Str::random(11), 'name' => 'YouTube', 'slug' => 'youtube', 'distribution_types' => '2', 'image' => 'youtube.png', 'created_at' => now(), 'updated_at' => now()
             ],
         ]);
     }

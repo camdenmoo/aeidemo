@@ -19,11 +19,11 @@ class DistributionTypeSeeder extends Seeder
         DistributionType::insert([
             [
                 // Digital Download
-                'hex' => Str::random(11), 'name' => 'Digital Download', 'slug' => 'digital-download', 'created_at' => now(), 'updated_at' => now()
+                'hex' => Str::random(11), 'name' => 'Digital Download', 'slug' => 'digital-download', 'image' => 'direct-download.png', 'created_at' => now(), 'updated_at' => now()
             ],
             [
                 // Streaming Product
-                'hex' => Str::random(11), 'name' => 'Streaming', 'slug' => 'streaming', 'created_at' => now(), 'updated_at' => now()
+                'hex' => Str::random(11), 'name' => 'Streaming', 'slug' => 'streaming', 'image' => 'streaming.png', 'created_at' => now(), 'updated_at' => now()
             ],
         ]);
     }

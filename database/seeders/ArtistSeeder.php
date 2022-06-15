@@ -19,11 +19,11 @@ class ArtistSeeder extends Seeder
         Artist::insert([
             [
                 // Ghost Dragon
-                'hex' => Str::random(11), 'name' => 'Ghost Dragon', 'slug' => 'Ghost Dragon', 'created_at' => now(), 'updated_at' => now()
+                'hex' => Str::random(11), 'name' => 'Ghost Dragon', 'slug' => 'ghost-dragon', 'image' => 'artist-1.jpg', 'created_at' => now(), 'updated_at' => now()
             ],
             [
                 // Caslow
-                'hex' => Str::random(11), 'name' => 'Caslow', 'slug' => 'caslow', 'created_at' => now(), 'updated_at' => now()
+                'hex' => Str::random(11), 'name' => 'Caslow', 'slug' => 'caslow', 'image' => 'artist-2.jpg', 'created_at' => now(), 'updated_at' => now()
             ],
         ]);
     }

@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('releases', function (Blueprint $table) {
             $table->id();
-            $table->string('hex', 11);
+            $table->string('hex', 11)->unique();
             $table->foreignId('artist_id');
             $table->foreignId('song_id');
             $table->string('distribution_types');
-            $table->timestamp('start_date');
+            $table->timestamp('start_date')->nullable();
             $table->timestamp('end_date')->nullable();
             $table->timestamps();
         });

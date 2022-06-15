@@ -15,9 +15,10 @@ return new class extends Migration
     {
         Schema::create('artists', function (Blueprint $table) {
             $table->id();
-            $table->string('hex', 11);
-            $table->string('name');
-            $table->string('slug');
+            $table->string('hex', 11)->unique();
+            $table->string('name')->unique();
+            $table->string('slug')->unique();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

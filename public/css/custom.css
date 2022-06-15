@@ -12,10 +12,100 @@ html, body{
     flex-direction: column;
 }
 
+a{
+    color: #c853b0;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+form select{
+    padding: 0.2rem 1rem 0.2rem 0.3rem;
+    min-width: 300px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+form select:focus-visible{
+    border-color: #000;
+}
+
+label, input{
+    display: block;
+}
+
+input{
+    margin-bottom: 1rem;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"],  input[type="date"]{
+    padding: 0.2rem 1rem 0.2rem 0.3rem;
+    min-width: 300px;
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+label{
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+form button[type="submit"]{
+    margin-top: 1.4rem;
+    display: block;
+}
+
+p.form-error{
+    color:red;
+    font-size: 0.8rem;
+}
+
+
+button{
+    border: 1px solid #000;
+    border-radius:0.2rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+}
+
+button.sm{
+    padding: 0.3rem 0.4rem;
+    font-size: 0.7rem;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #444;
+}
+
+.clear{
+    clear: both;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 1.4;    
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 header{
@@ -60,7 +150,8 @@ nav ul>li>a,
 
 nav ul>li>a:hover,
 .site-logo>h1>a:hover{
-    color: rgb(200, 83, 176);
+    color: #c853b0;
+    text-decoration: none;
 }
 
 main{
@@ -68,6 +159,228 @@ main{
     display: flex;
     padding: 3rem 0;
 }
+
+section h1{
+    margin-bottom: 1rem ;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.page-header{
+    margin-bottom: 2rem;
+}
+
+.page-header h1{
+    float: left;
+}
+
+.page-header button{
+    float: right;
+}
+
+.page-header p{
+    display: block;
+}
+
+.sidebar-menu{
+    grid-column: 1 / 4;
+    margin-right: 2rem;
+}
+
+.page-section{
+    grid-column: 4 / 13;
+}
+
+ul.menu{
+    list-style: none;
+}
+
+ul.menu li{
+    color: #000;
+}
+
+ul.menu li.active{
+    background: #f5daef;
+}
+
+ul.menu li:hover{
+    background: #000;
+    color: #c853b0 !important;
+    cursor: pointer;
+}
+
+ul.menu li a{
+    color: inherit;
+    display: block;
+    padding: 0.4rem 0.6rem; 
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+
+}
+
+ul.menu li a:hover{
+    text-decoration: none;
+}
+
+
+
+
+.menu-header{
+    background: #000;
+    color: #fff;
+    font-weight: 900;
+    padding: 0.6rem 0.8rem;
+}
+
+.artist-card{
+    background: #edeee4;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #c2c3b4;
+    border-radius: 0.2rem;
+    display: flex;
+}
+
+.artist-card h3{
+    margin-bottom: 1rem;
+}
+
+.artist-card .image{
+    width: 150px;
+    padding: 0.1rem;
+    
+}
+
+.artist-card .image img{
+    width: 100%;
+    padding: 0.2rem;
+    border: 1px solid #aaab96;
+    background: #c2c3b4;
+    border-radius: 0.2rem;
+}
+
+.artist-card .info{
+    width: 100%;
+    padding: 0.5rem 1.4rem; 
+}
+
+.artist-card .info .artist-details h3{
+    margin-top: 0.4rem;
+    margin-bottom: 0.1rem;
+}
+
+.artist-card .info .artist-details p{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.artist-card .info button{
+    margin-top: 1.1rem;
+}
+
+.artist-song-card{
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 0.2rem;
+}
+
+
+
+.asl-card{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.asl-card .list-row{
+    display: flex;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 0;
+    
+}
+
+.asl-card .list-row .left-col{
+    width: 45%;
+    font-weight: 400;
+}
+
+.asl-card .list-row .right-col{
+    width: 55%;
+    font-weight: 300;
+}
+
+.asl-card .list-row.partners{
+    border-bottom: 1px solid #000a00;
+    margin-bottom: 1rem;
+}
+
+.asl-card .list-row-spacer{
+    height: 1px;
+    margin-bottom: 2rem;
+}
+
+
+.songs-list-card{
+    width: 100%;
+}
+
+
+
+
+.partner-card{
+    border: 1px solid #666;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.partner-card .image img{
+    width:75px;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+}
+
+.partner-card .info p{
+    font-weight: 300;
+}
+
+
+.release-list-card{
+    width: 100%;
+}
+
+.data-table .header{
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #c853b0;
+}
+
+.data-table .row{
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 300;
+    border-bottom: 1px solid #ddd;
+    padding: 0.7rem 0;
+}
+  
+.data-table .col{
+    flex: 1;
+}
+
+
+
 
 footer{
     flex: 0;
@@ -77,8 +390,3 @@ footer{
     padding: 1rem 0;
 }
 
-.container{
-    width: 1080px;
-    margin: 0 auto;
-    overflow: hidden;
-}
