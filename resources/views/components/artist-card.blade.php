@@ -13,7 +13,7 @@
             <button class="sm toggle-artist-song-list" rel="{{$artist->hex}}">Songs & Releases</button>
         </div>
 
-        <div id="artist-song-list-{{$artist->hex}}" class="artist-song-list" style="display: none;">
+        <div id="artist-song-list-{{$artist->hex}}" class="artist-song-list" style="display: block;">
             @foreach($artist->songs as $song)
                 <div class="asl-card">
                     <h3>Song title: {{$song->name}}</h3>

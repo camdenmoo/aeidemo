@@ -5,7 +5,7 @@
     <section id="command-line" class="page-section">
 
         <div class="page-header">
-            <h1>Database</h1>
+            <h1>Search - Form</h1>
             <div class="clear"></div>
             <p>Select the distribution partner and date from the form to see what releases are available:</p>
             <p>Alternatively, <a href="/command-line">click here</a> to find the same information through the command line tool.</p>
@@ -22,6 +22,7 @@
                 @endforeach
             </select>
 
+            <label for="date">Date of Release:</label>
             <input type="date" name="date">
 
             <button type="submit">View available releases</button>

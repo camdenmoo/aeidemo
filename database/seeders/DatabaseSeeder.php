@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             DistributionTypeSeeder::class,
             PartnerSeeder::class,
             ArtistSeeder::class,
+            GenreSeeder::class,
             SongSeeder::class,
             ReleaseSeeder::class,
         ]);

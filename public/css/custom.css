@@ -27,6 +27,7 @@ form select{
     min-width: 300px;
     font-size: 1rem;
     margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
 }
 
 form select:focus-visible{
@@ -39,6 +40,7 @@ label, input{
 
 input{
     margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
 }
 
 input[type="checkbox"], input[type="radio"]{
@@ -236,7 +238,7 @@ ul.menu li a:hover{
 }
 
 .artist-card{
-    background: #edeee4;
+    background: #fff5eb;
     margin-bottom: 1rem;
     padding: 1rem;
     border: 1px solid #c2c3b4;

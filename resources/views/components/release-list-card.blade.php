@@ -16,7 +16,7 @@
                     {{$release->song->name}}
                 </div>
                 <div class="col">
-                    {{$release->artist->name}}
+                    <a href="/artists/{{$release->artist->hex}}">{{$release->artist->name}}</a>
                 </div>
                 <div class="col">
                     @foreach($release->available_distributions($release) as $distribution_type)

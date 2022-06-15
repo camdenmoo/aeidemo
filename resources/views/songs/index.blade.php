@@ -15,8 +15,8 @@
                 <div class="header">
                     <div class="col">Song title</div>
                     <div class="col">Artist</div>
-                    <div class="col">Distributions</div>
-                    <div class="col">Partners</div>
+                    <div class="col">Duration</div>
+                    <div class="col">Genre</div>
                     <div class="col"></div>
                 </div>
                 @foreach($songs as $song)
@@ -25,24 +25,16 @@
                             {{$song->name}}
                         </div>
                         <div class="col">
-                            {{$song->artist->name}}
+                            <a href="/artists/{{$song->artist->hex}}">{{$song->artist->name}}</a> 
                         </div>
                         <div class="col">
-                            @foreach($song->releases as $release)
-                                @foreach($release->available_distributions($release) as $distribution_type)
-                                    <p>{{$distribution_type->name}}</p>
-                                @endforeach
-                            @endforeach
+                            {{$song->duration}}
                         </div>
                         <div class="col">
-                            @foreach($song->releases as $release)
-                                @foreach($release->valid_partners($release) as $valid_partner)
-                                    <p>{{$valid_partner->name}}</p>
-                                @endforeach
-                            @endforeach
+                            {{$song->genre->name}}
                         </div>
                         <div class="col" style="text-align: right;">
-                            <button class="sm">View releases</button>
+                            <a href="/releases"><button class="sm">View releases</button></a>
                         </div>
                     </div>
                 @endforeach

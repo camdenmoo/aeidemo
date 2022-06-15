@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Genre;
 use App\Models\Artist;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -12,6 +13,10 @@ class Song extends Model
 
     public function artist(){
         return $this->belongsTo(Artist::class, 'artist_id');
+    }
+
+    public function genre(){
+        return $this->belongsTo(Genre::class, 'genre_id');
     }
 
     public function releases(){

@@ -72,6 +72,8 @@ class HomeController extends Controller
         $partner_name = $search_terms[0];
         $date = $search_terms[1];
 
+        $date = str_replace('/', '-', $date);
+
         $partner = Partner::where('name', $partner_name)->first();
 
         // dd($date);
